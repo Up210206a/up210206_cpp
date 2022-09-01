@@ -6,5 +6,6 @@
 
 **mi nombre es Jorge Santacruz**
 
-*vengo de la carrera de ingeniería en aeronáutica recordando esta materia* 
+*vengo de la carrera de ingeniería en aeronáutica recursando esta materia* 
 
+*anteriormente había tomado un curso de c en programación básica*
