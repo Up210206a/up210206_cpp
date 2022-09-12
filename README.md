@@ -11,11 +11,12 @@
 *anteriormente había tomado un curso de c en programación básica*
 ![ERROR AL CARGAR IMAGEN](https://github.com/Up210206a/up210206_cpp/blob/main/IMAGENES/XPEOWJBKLJE7PJJPL7J4E52OJ4.jpg)
 
+<p align="center">
 ## Unidades del curso
  
- - [UNIDAD 1](#unidad-1)
- - [UNIDAD 2](#unidad-2)
- - [UNIDAD 3](#unidad-3)
- - [UNIDAD 4](#unidad-4)
 
  - [UNIDAD 1](https://github.com/Up210206a/up210206_cpp/tree/main/U1)
+ - [UNIDAD 2](https://github.com/Up210206a/up210206_cpp/tree/main/U2)
+ - [UNIDAD 3](https://github.com/Up210206a/up210206_cpp/tree/main/U3)
+ - [UNIDAD 4](https://github.com/Up210206a/up210206_cpp/tree/main/U)
+
