@@ -11,8 +11,8 @@
 *anteriormente había tomado un curso de c en programación básica*
 ![ERROR AL CARGAR IMAGEN](https://github.com/Up210206a/up210206_cpp/blob/main/IMAGENES/XPEOWJBKLJE7PJJPL7J4E52OJ4.jpg)
 
-<p align="###UNIDADES DEL CURSO ">
-## Unidades del curso
+### **UNIDADES DE LA MATERIA** 
+
  
 
  - [UNIDAD 1](https://github.com/Up210206a/up210206_cpp/tree/main/U1)
