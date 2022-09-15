@@ -17,7 +17,7 @@ Last Modification:
 int main(){
 
     //prints a text on the screen 
-    std::cout<<"Hello World! This is not my first program";
+    std::cout<<"Hello World! This is not my first program" << std::endl;
 
 
     //Return 0 means that the program ends succesfully 
