@@ -29,7 +29,7 @@ int main()
         cout << "el numero es diferente a 1" << endl;
     }
 
-
+   // !=
    cout << "Ingresa un numero diferente a 1: ";
    cin >> numero;
    if (numero != dato){
@@ -40,6 +40,7 @@ int main()
         cout << "el numero es igual a 1" << endl;
     }
 
+// <
    cout << "Ingresa un numero menor que 1: ";
    cin >> numero;
    if (numero < dato){
@@ -50,6 +51,7 @@ int main()
         cout << "el numero es mayor a 1" << endl;
     }
 
+// >
     cout << "Ingresa un numero mayor que 1: ";
    cin >> numero;
    if (numero > dato){
@@ -60,6 +62,7 @@ int main()
         cout << "el numero es menor a 1" << endl;
     }
 
+// <=
     cout << "Ingresa un numero menor o igual que 1: ";
    cin >> numero;
    if (numero <= dato){
@@ -70,6 +73,7 @@ int main()
         cout << "el numero es mayor a 1" << endl;
     }
 
+// >=
     cout << "Ingresa un numero mayor o igual que 1: ";
    cin >> numero;
    if (numero >= dato){
