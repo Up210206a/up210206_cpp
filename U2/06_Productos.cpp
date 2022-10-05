@@ -39,6 +39,11 @@ int main (){
 
     }
 
+    else {
+
+        cout << "THE TOTAL AT THE END IS: "<< tot << endl;
+    }
+
 
 
 
