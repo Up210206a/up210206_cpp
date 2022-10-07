@@ -16,8 +16,9 @@
 
 ***
 
-<center>  ![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/e26601_c02222ef7b6e4e939451ec8b709a8b9a%7Emv2.gif) 
-
+<center>
+![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/e26601_c02222ef7b6e4e939451ec8b709a8b9a%7Emv2.gif) 
+</center>
 
 ***
 
@@ -78,6 +79,21 @@
 ```
 
 *then we have the output of the console according to random variables:* 
+
+an amount of 5000:
+
+![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/renta1.png)
+
+an amount of 15000:
+
+![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/renta2.png)
+
+an amount of 21000:
+
+![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/renta3.png)
+
+
+
 
 
 
