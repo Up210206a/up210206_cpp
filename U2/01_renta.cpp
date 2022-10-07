@@ -4,17 +4,21 @@
    
 */
 
+//principal library
 #include <iostream>
 
 using namespace std;
 
 int main (){
 
+//variables for the correct operations
    float renta, impuesto, pago;
 
+//input for the amount 
     cout << "ingresa el monto de tu renta" << endl; 
     cin >> renta;
 
+//begin of the conditional depending of the amount
     if (renta < 10000){
 
         impuesto=0.05;
@@ -24,7 +28,7 @@ int main (){
         cout << "debes pagar: "<< pago << endl;
     }
 
-    if (renta >=10000 && renta<20000){
+    else if (renta >=10000 && renta<20000){
 
         impuesto=0.15;
 
@@ -33,7 +37,7 @@ int main (){
         cout << "debes pagar: "<< pago << endl;
     }
 
-    if (renta >= 20000 && renta < 35000){
+    else if (renta >= 20000 && renta < 35000){
 
         impuesto=0.20;
 
@@ -42,7 +46,7 @@ int main (){
         cout << "debes pagar: "<< pago << endl;
     }
 
-    if (renta >= 35000 && renta <=60000){
+    else if (renta >= 35000 && renta <=60000){
 
         impuesto=0.30;
 
@@ -51,7 +55,7 @@ int main (){
         cout << "debes pagar: "<< pago << endl;
     }
 
-    if (renta > 60000){
+    else if (renta > 60000){
 
         impuesto=0.45;
 
