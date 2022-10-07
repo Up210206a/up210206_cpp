@@ -100,6 +100,53 @@ an amount of 21000:
 
 **Another code using the conditional "If", but in this case we let to know to the user his level of benefits depending of his grade of development on the work**
 
+```c++
+//input of the grade of the user
+    cout << "INTRODUCE TU CALIFICACION: " << endl;
+    cin >> calificacion;
+    //first conditional of the code
+
+    if (calificacion == 0.0){
+
+        cout << "TIENES UN NIVEL INACEPTABLE" << endl;
+
+        //math operation that determines the benefits
+        recompensa = calificacion*2400;
+        cout << "TU BONIFICACION ES DE: " << recompensa << endl;
+
+       
+    }
+
+    //second conditional
+
+    else if (calificacion == 0.4){
+
+        cout << "TIENES UN NIVEL ACEPTABLE" << endl;
+        //math operation   
+        recompensa = calificacion*2400;
+        cout << "TU BONIFICACION ES DE: " << recompensa << endl;
+
+        }
+
+
+    //third conditional
+
+         else if (calificacion >= 0.6){
+
+            cout << "TIENES UN NIVEL MERITORIO" << endl;
+
+            //math operation
+            recompensa = calificacion*2400;
+            cout << "TU BONIFICACION ES DE: " << recompensa << endl;
+
+        }
+```
+       
+
+
+        
+
+
 
 
 
