@@ -27,7 +27,7 @@
 
 ### 01_renta
 
-*this program le the user to know how many taxes he will pay depending on the amount of rent he pay over the month, this code contain the first basic tool of the conditional "if" that makes options, that will be if (this) then do that action.*
+**this program le the user to know how many taxes he will pay depending on the amount of rent he pay over the month, this code contain the first basic tool of the conditional "if" that makes options, that will be if (this) then do that action.**
 
 ```c++
 //input for the amount 
@@ -97,6 +97,9 @@ an amount of 21000:
 
 ---
 ### 02_Beneficios
+
+**Another code using the conditional "If", but in this case we let to know to the user his level of benefits depending of his grade of development on the work**
+
 
 
 
