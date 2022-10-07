@@ -16,7 +16,11 @@
 
 **My name is Jorge Santacruz**
 
-*i come from aeronautical engineering* 
+# *i come from aeronautical engineering* 
+
+![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/IMAGENES/zbXTV5X.gif)
+
+***
 
 
 
