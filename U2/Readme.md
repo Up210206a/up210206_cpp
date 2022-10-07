@@ -17,8 +17,11 @@
 ***
 
 <center>
+
 ![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/e26601_c02222ef7b6e4e939451ec8b709a8b9a%7Emv2.gif) 
+
 </center>
+
 
 ***
 
@@ -91,6 +94,9 @@ an amount of 15000:
 an amount of 21000:
 
 ![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/renta3.png)
+
+---
+### 02_Beneficios
 
 
 
