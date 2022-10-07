@@ -4,6 +4,9 @@
 
 # WELCOME TO MY C++ COURSE REPOSITORY
 
+![ERROR AL CARGAR IMAGEN](https://github.com/Up210206a/up210206_cpp/blob/main/IMAGENES/giphy-6.gif)
+
+
 ### HERE YOU WILL FIND SOME BASICS FOR THIS LANGUAGE
 
 
@@ -13,13 +16,12 @@
 
 **My name is Jorge Santacruz**
 
-*i come from the carrer in aeronautics engineering* 
+*i come from aeronautical engineering* 
 
 
 
 <div align= "center">
 
-![ERROR AL CARGAR IMAGEN](https://github.com/Up210206a/up210206_cpp/blob/main/IMAGENES/XPEOWJBKLJE7PJJPL7J4E52OJ4.jpg)
 
 
 ### **UNITS** 
