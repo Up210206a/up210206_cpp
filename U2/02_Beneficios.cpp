@@ -12,45 +12,45 @@ using namespace std;
 int main ( ){
 
 
-//variables declaradas que representan la califiacacion del usuario y la recompensa que tendra
+//variables of the code
     double calificacion, recompensa;
     
 
-//Aqui el usuario introduce su calificacion al programa
+//input of the grade of the user
     cout << "INTRODUCE TU CALIFICACION: " << endl;
     cin >> calificacion;
-    //primera comparacion de la calificacion con el primer nivel
+    //first conditional of the code
 
     if (calificacion == 0.0){
 
         cout << "TIENES UN NIVEL INACEPTABLE" << endl;
 
-        //operacion que determina la recompensa del usuario
+        //math operation that determines the benefits
         recompensa = calificacion*2400;
         cout << "TU BONIFICACION ES DE: " << recompensa << endl;
 
        
     }
 
-    //segunda comparacion de la calificacion con el segundo nivel
+    //second conditional
 
     else if (calificacion == 0.4){
 
         cout << "TIENES UN NIVEL ACEPTABLE" << endl;
-        //operacion que determina la recompensa del usuario    
+        //math operation   
         recompensa = calificacion*2400;
         cout << "TU BONIFICACION ES DE: " << recompensa << endl;
 
         }
 
 
-    //tercera comparacion de la calificacion con el tercer nivel
+    //third conditional
 
          else if (calificacion >= 0.6){
 
             cout << "TIENES UN NIVEL MERITORIO" << endl;
 
-            //operacion que determina la recompensa del usuario
+            //math operation
             recompensa = calificacion*2400;
             cout << "TU BONIFICACION ES DE: " << recompensa << endl;
 
