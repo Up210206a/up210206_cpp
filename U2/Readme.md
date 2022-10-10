@@ -12,7 +12,7 @@
 
 
 
-<center>  In this unit we learned the basic of c++ like the cycle "for", the conditional of "if" and the cycle/conditional "do while".
+<center>  **In this unit we learned the basics of c++ like the cycle "for", the conditional of "if" and the cycle/conditional "do while".**
 
 ***
 
@@ -27,7 +27,7 @@
 
 ### 01_renta
 
-**this program le the user to know how many taxes he will pay depending on the amount of rent he pay over the month, this code contain the first basic tool of the conditional "if" that makes options, that will be if (this) then do that action.**
+**this program let the user to know how many taxes he will pay depending on the amount of rent he pay over the month, this code contain the first basic tool of the conditional "if" that makes options, that will be if (this) then do that action.**
 
 ```c++
 //input for the amount 
