@@ -281,6 +281,26 @@ int pizza;
     cout << "THANKS FOR UR PREFERENCE!!" << endl;
 
 ```
+
+Lets say that the user wants a normal pizza with salami:
+
+![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/04pizza1.png)
+
+Now the user wants a vegan pizza with extra cheese: 
+
+![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/04pizza2.png)
+
+Then the user wants a normal pizza with jam: 
+
+![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/04pizza3.png)
+
+And finally the user wants a vegan pizza with extra sauce: 
+
+![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/04pizza4.png)
+
+
+
+
 ***
 
 ### 05_Temperatura
