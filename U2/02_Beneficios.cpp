@@ -52,6 +52,8 @@ int main ( ){
 
             //math operation
             recompensa = calificacion*2400;
+
+            //output of the program 
             cout << "TU BONIFICACION ES DE: " << recompensa << endl;
 
         }
