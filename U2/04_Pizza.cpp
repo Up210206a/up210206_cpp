@@ -35,10 +35,11 @@ int main() {
             cout << "EXTRA CHEESE"<<endl;
             cout << "VEG PIZZA WITH EXTRA CHEESE"<< endl;
         }
-        else if  {
-            cout << "EXTRA SAUSACE"<<endl;
+            else  {
+
+            cout << "EXTRA SAUSACE"<< endl;
             cout << "VEG PIZZA WITH EXTRA SAUSACE"<<endl;
-        }
+            }
     }
 
 
