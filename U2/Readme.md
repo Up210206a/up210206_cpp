@@ -249,6 +249,48 @@ int pizza;
     cout << "THANKS FOR UR PREFERENCE!!" << endl;
 
 ```
+***
+
+### 05_Temperatura
+
+**This is a code that ask the user for 6 different temperatures and the code shows the lowest one, the highest one and the average of all of them, the code works based on if into another if**
+
+```c++
+
+cout << "PLEASE INTRODUCE 6 TEMPERATURES" << endl; 
+
+    do{
+
+        cout << "PLEASE INTRODUCE THE TEMPERATURE NO. " << cont+1 << endl;
+        cin >> temp;
+
+        prom += temp; 
+        cont ++; 
+
+        if (temp>low){
+            
+            low = temp;
+        }
+
+        else {
+            high=temp;
+        }
+
+
+
+    }while (cont<6);
+
+    cout <<"THE AVARAGE OF TEMPERATURES IS: " << prom/6 << endl;
+    cout <<"THE LOWEST TEMPERATURE IS: " << high << endl;
+    cout <<"THE highest TEMPERATURE IS: " << low << endl;
+
+```
+***
+### 06_Productos
+
+**
+
+
 
 
 
