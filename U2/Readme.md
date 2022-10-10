@@ -338,6 +338,14 @@ cout << "PLEASE INTRODUCE 6 TEMPERATURES" << endl;
 
 ```
 ***
+
+Lets try with some random temperatures: 
+
+![ERRROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/05TEMP01.png)
+
+Another random temperatures: 
+
+![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/5temperatura2.png)
 ### 06_Productos
 
 **A code that acumulates products and let the user to select between continue and not continue with the process using while, if and acumulators**
