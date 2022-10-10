@@ -146,13 +146,16 @@ an amount of 21000:
         }
 ```
 first level: 
+
 ![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/Beneficios1.png)
 
 second level:
+
 ![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/beneficos2.png)
 
 third level: 
-![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/beneficos3.png)
+
+![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/beneficios3.png)
 
 
 
@@ -196,12 +199,15 @@ third level:
 **Then we have different ages for the output**
 
 an age of 3: 
+
 ![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/juegos1.png)
 
 an age of 5:
+
 ![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/juegos2.png)
 
 an age of 23: 
+
 ![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/juegos3.png)
 
 ---
