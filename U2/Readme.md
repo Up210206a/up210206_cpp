@@ -11,8 +11,12 @@
 
 
 
+<div align= "center">
 
-<center>  **In this unit we learned the basics of c++ like the cycle "for", the conditional of "if" and the cycle/conditional "do while".**
+ **In this unit we learned the basics of c++ like the cycle "for", the conditional of "if" and the cycle/conditional "do while".**
+
+ </center>
+
 
 ***
 
@@ -288,7 +292,138 @@ cout << "PLEASE INTRODUCE 6 TEMPERATURES" << endl;
 ***
 ### 06_Productos
 
-**
+**A code that acumulates products and let the user to select between continue and not continue with the process using while, if and acumulators**
+
+
+```c++
+//input of the program to begin the process
+    cout << "INTRODUCE UR OPTION" << endl;
+    cout << "1 to continue, 2 for end" << endl;
+    cin >> op;
+
+
+    //process that begins the process of the counting of products
+    if (op==1){
+        do{
+
+            //input of the program to capture products
+            cout << "INTRODUCE THE NUMBER OF PRODUCTS" << endl;
+            cin >> prods;
+            cout << "INTRODUCE THE PRICE OF THE PRODUCT" << endl;
+            cin >> price;
+
+
+            //math process that acumulates the products
+            tot  += price*prods;
+
+
+            //output of the program that shows the total of products
+            cout << "THE TOTAL IS: "<<  tot << endl;
+
+            cout << "CONTINUE?" << endl;
+            cin >> op;
+
+    //another option that ends the process
+    }while (op!=2);
+
+    }
+
+    else {
+
+        cout << "THE TOTAL AT THE END IS: "<< tot << endl;
+    }
+
+```
+***
+### 07_Binario
+
+**This code ask the user for a decimal number and the program turns it into a binary number based on math operations and a while cycle**
+
+
+```c++
+ //principal variables
+    int num=0;
+    string resultado;
+
+
+    //input of the program asking the user for a number
+    cout << "PLEASE INTRODUCE A RANDOM NUMBER" << endl; 
+    cin >> num; 
+
+
+    //cycle that turns the number into a binary number 
+    while (num!=0){
+
+        //alternative way to do it
+         /*
+        if (num %2 == 0){
+            resultado = 0 + resultado;
+            
+        }
+
+        else {
+
+            resultado = 1 +resultado;
+        }
+
+        num /=2;
+        */
+
+       //other way to solve it
+       // resultado=(num%2==0)"0" + resultado : "1"+resultado;
+
+
+        
+       
+        //another way to solve the code
+       
+        resultado=to_string(num%2)+resultado;
+        num /=2;
+       
+       
+        
+      
+
+       
+
+    }
+
+
+    //output of the program 
+    cout << "THE NUMBER IS: "<< resultado <<endl;
+
+```
+***
+### 07_Decimal
+
+**This code is the second part of the past code, but in this case we ask the user to introduce a binary number and with a similar process the program turns the binary number into a decimal number**
+
+
+```c++
+//input of the program asking the user for a binary number
+    cout << "PLEASE INTRODUCE A RANDOM NUMBER" << endl; 
+    cin >> num; 
+
+    while((num/10)!=0){
+
+        //math operations  for the conversion 
+
+        dig=num%10;
+        dec=dec+dig*pow(2.0,exp);
+        exp++;
+        num=(num/10);
+
+
+    }
+
+    dec=dec +num * pow(2.0,exp);
+
+    //output of the program
+
+    cout << "THE NUMBER BINARY IS: " << dec << endl;
+
+```
+
 
 
 

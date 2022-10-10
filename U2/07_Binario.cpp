@@ -41,7 +41,7 @@ int main (){
 
         num /=2;
         */
-       
+
        //other way to solve it
        // resultado=(num%2==0)"0" + resultado : "1"+resultado;
 
@@ -61,6 +61,8 @@ int main (){
 
     }
 
+
+    //output of the program 
     cout << "THE NUMBER IS: "<< resultado <<endl;
 
 }
