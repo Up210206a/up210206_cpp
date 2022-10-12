@@ -346,6 +346,7 @@ Lets try with some random temperatures:
 Another random temperatures: 
 
 ![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/5temperatura2.png)
+
 ### 06_Productos
 
 **A code that acumulates products and let the user to select between continue and not continue with the process using while, if and acumulators**
@@ -479,6 +480,59 @@ Another random temperatures:
     cout << "THE NUMBER BINARY IS: " << dec << endl;
 
 ```
+
+***
+
+### 08_Multiplicación
+
+**This programs uses a for cycle that multiplicates two numbers and also there is another cycle for that makes a table for the format of the multiplication, another function for this program is to use the table maker**
+
+```c++
+ //input for the root number of the multiplication
+    cout << "PLEASE INTRODUCE THE MAIN NUMBER OF THE MULTIPLICATION" << endl; 
+    cin >> num;
+
+    cout << endl;
+
+    //number of times that the number multiplicates
+    cout << "PLEASE INTRODUCE THE NUMBER OF TIMES OF THE MULTIPLICATION" << endl; 
+    cin >> cont;
+
+    cout << endl;
+
+
+    //main cycle that makes the math operation
+    for(i=1;i<=cont;i++){
+
+        //secondary cycle that draws the lines between the table
+        for(j=1;j<=73;j++){
+            
+            cout << "-";
+            
+        }
+
+        cout << endl;
+
+        //main output that makes the math operation and make a space between the numbers
+        cout<< "|" << num << "\t|"<< "\t X" << "\t|"<<"\t"<< i << "\t|"<<"\t =" <<"\t|"<< "\t" << i*num << "\t|"<<endl;
+
+
+    }
+
+        //final cycle that ends the lines of the table 
+        for(int j=1;j<=73;j++){
+            
+            cout << "-";
+            
+        }
+
+    cout << endl;
+
+    //return a int number that ends the main function 
+    return 0;
+```
+
+
 
 
 
