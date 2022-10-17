@@ -1,65 +1,102 @@
-/* Unit 2. Practice 8
+/*
+   Unit 2. Practice 9
    Autor: Jorge Emilio Santacruz Morales
    Fecha: 12/10/2022
-   
+
 */
 
-
-
+//Libraries of the code
 #include <iostream>
 #include <cmath>
+#include <iomanip>
+
 using namespace std;
 
-
-
-
-double biseccion(double num){
-    //Equation y=x²+3x+8
-    return pow(num,2)-num-12;
+//Function that solves the ecuation
+float resolverEcuacion(float num){
+    //x²-x-12
+    return (pow(num, 2) - num - 12);
 }
 
+// Function that prints a line 
+void imprimirlinea()
+{
+    for (int i = 0; i < 161; i++)
+    {
+        cout << "-";
+    }
+    cout << "\n";
 
-int main(){
+    
+}
 
-    double a,b,c,ya,yb,yc;
+//main function
+int main (){
+
+
+    //Variables of the main function
     float error=0.01;
+    double a=0,b=0,c=0,ya=0,yb=0,yc=0,solucion;
+    int comparacion=1;
 
-    cout << "INTRODUCE A"<< endl;
+    //Input of the cosde that introduces variables of the ecuation
+    cout << "Introduce A: " <<endl;
     cin >> a;
-    cout << "INTRODUCE B"<<endl;
+    cout << "Introduce B: " <<endl;
     cin >> b;
 
-    do
-    {
-        ya = biseccion(a);
-        yb = biseccion(b);
+    //Prints the header of the comparision table
+    imprimirlinea();
+    cout << "| Comparacion \t| a \t\t\t| b \t\t\t| c \t\t\t| y(a)\t\t\t| y(b)\t\t\t| y(c)\t\t\t| "<<endl;
+    imprimirlinea();
 
-        if ((yb > 0 && ya < 0) || (ya > 0 && yb < 0)){
 
-            c = (ya+yb)/2;
-            yc = ya;
-            cout << c;
+    //Main cycle that compares the ranges of the ecuation
+    do{
+
+        c = (a + b) / 2;
+        ya = resolverEcuacion(a);
+        yb = resolverEcuacion(b);
+        yc = resolverEcuacion(c);
+
+        cout << "| " << comparacion << "\t\t| " << fixed << setprecision(8) << a << "\t\t| " << b << "\t\t| " << c << "\t\t| " << ya << "\t\t| " << yb << "\t\t| " << yc << "\t\t| \n";
+        
+        
+        imprimirlinea();
+
+        comparacion ++;
+
+        if((ya*yc)<0){
+            b=c;
         }
-
+        else if((yc*yb)<0){
+            a=c;
+        }
         else{
 
-            cout << "NO ROOT" << endl;
+            cout << "NO ROOT" <<endl;
             break;
         }
+
+    }while(abs(yc)>=error);
+
+     // Output of the code-Solution of the ecuation
+    if (solucion != 0){
+
+        cout << "ROOT: :" << c << endl;
         
-    } while (abs(yc)>=error);
+    }
+
+    else{
+
+        cout << "NO ROOT IN THE RANGE" << endl;
+    }
+
+
+
     return 0;
 }
 
-/*
-if(ya*yc<0){
-    b=c
-}
 
-else if(yc*yb<0){
-    a=c
-}
-else{
-    cout <<"NO ROOT"<< endl;
-}
-*/
+
+
