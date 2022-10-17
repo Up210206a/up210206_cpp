@@ -1,44 +1,65 @@
-/* Unit 2. Practice 9
+/* Unit 2. Practice 8
    Autor: Jorge Emilio Santacruz Morales
-   Fecha: 13/10/2022
+   Fecha: 12/10/2022
    
 */
 
-//y=x^2+3x+8
 
-//libraries of the code
+
 #include <iostream>
 #include <cmath>
-
-
 using namespace std;
 
-float resolverEcuacion(float valor){
 
-    //con la ecuacion y=x^2+3x+8
-    return pow(valor,3)+(3*valor)+8;
+
+
+double biseccion(double num){
+    //Equation y=x²+3x+8
+    return pow(num,2)-num-12;
 }
 
 
-//Main function of the program
-int main (){
+int main(){
 
-    float a=0;
-    float b=0;
-    float c=(a+b)/2;
-    float ya=resolverEcuacion(a);
-    float yb=resolverEcuacion(b);
-    float yc=resolverEcuacion(c);
+    double a,b,c,ya,yb,yc;
+    float error=0.01;
 
-    /*cout << "INSERT A: " << endl;
+    cout << "INTRODUCE A"<< endl;
     cin >> a;
-    cout << "INSERT B: " << endl;
+    cout << "INTRODUCE B"<<endl;
     cin >> b;
-    */
 
-    cout << ya << endl; 
+    do
+    {
+        ya = biseccion(a);
+        yb = biseccion(b);
 
+        if ((yb > 0 && ya < 0) || (ya > 0 && yb < 0)){
 
+            c = (ya+yb)/2;
+            yc = ya;
+            cout << c;
+        }
 
-    return 0; 
+        else{
+
+            cout << "NO ROOT" << endl;
+            break;
+        }
+        
+    } while (abs(yc)>=error);
+    return 0;
 }
+
+/*
+if(ya*yc<0){
+    b=c
+}
+
+else if(yc*yb<0){
+    a=c
+}
+else{
+    cout <<"NO ROOT"<< endl;
+}
+*/
