@@ -353,7 +353,11 @@ Another random temperatures:
 
 
 ```c++
-//input of the program to begin the process
+//main variables of the program
+    int op=0;
+    float prods,price,acum,tot;
+
+    //input of the program to begin the process
     cout << "INTRODUCE UR OPTION" << endl;
     cout << "1 to continue, 2 for end" << endl;
     cin >> op;
@@ -385,12 +389,20 @@ Another random temperatures:
 
     }
 
-    else {
-
-        cout << "THE TOTAL AT THE END IS: "<< tot << endl;
+    else if(op!=1 || op!=2){
+        cout << "ERROR" << endl;
     }
 
+    //End of the program that counts all the amount of products
+
+    
+
+        cout << "THE TOTAL AT THE END IS: "<< tot << endl;
+
 ```
+
+
+
 ***
 ### 07_Binario
 
@@ -547,6 +559,13 @@ The results when the user type 7*17
 **This code uses the method of the bisection to solve a cuadratic equation based on the variables that the user introduces, we use an external function out of the main function to solve the equation compairing results many times until we find the root**
 
 ```c++
+//Libraries of the code
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+
+using namespace std;
+
 //Function that solves the ecuation
 float resolverEcuacion(float num){
     //x²-x-12
@@ -614,6 +633,8 @@ int main (){
         }
 
     }while(abs(yc)>=error);
+
+    solucion=c;
 
      // Output of the code-Solution of the ecuation
     if (solucion != 0){

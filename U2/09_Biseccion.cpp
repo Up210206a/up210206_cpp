@@ -80,6 +80,8 @@ int main (){
 
     }while(abs(yc)>=error);
 
+    solucion=c;
+
      // Output of the code-Solution of the ecuation
     if (solucion != 0){
 

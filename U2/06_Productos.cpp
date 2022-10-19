@@ -11,6 +11,7 @@ using namespace std;
 
 int main (){
 
+    //main variables of the program
     int op=0;
     float prods,price,acum,tot;
 
@@ -46,14 +47,20 @@ int main (){
 
     }
 
-    else {
-
-        cout << "THE TOTAL AT THE END IS: "<< tot << endl;
+    else if(op!=1 || op!=2){
+        cout << "ERROR" << endl;
     }
 
+    //End of the program that counts all the amount of products
+
+    
+
+        cout << "THE TOTAL AT THE END IS: "<< tot << endl;
+    
 
 
 
+    return 0;
 
     
 }
