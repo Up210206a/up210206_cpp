@@ -401,6 +401,18 @@ Another random temperatures:
 
 ```
 
+An exapmle with a random products as the output:
+
+![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/06productos1.png)
+
+![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/06productos3.png)
+
+An Example of an error if the user dont choose the correct option:
+
+![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/06productos2.png)
+
+
+
 
 
 ***
@@ -416,7 +428,7 @@ Another random temperatures:
 
 
     //input of the program asking the user for a number
-    cout << "PLEASE INTRODUCE A RANDOM NUMBER" << endl; 
+    cout << "PLEASE INTRODUCE A RANDOM DECIMAL NUMBER" << endl; 
     cin >> num; 
 
 
@@ -459,7 +471,7 @@ Another random temperatures:
 
 
     //output of the program 
-    cout << "THE NUMBER IS: "<< resultado <<endl;
+    cout << "THE NUMBER DECIMAL CONVERTED IN DECIMAL IS: "<< resultado <<endl;
 
 ```
 ***
@@ -469,8 +481,14 @@ Another random temperatures:
 
 
 ```c++
-//input of the program asking the user for a binary number
-    cout << "PLEASE INTRODUCE A RANDOM NUMBER" << endl; 
+//principal variables
+    int exp=0, dig;
+    int num, dec=0;
+    
+
+
+    //input of the program asking the user for a binary number
+    cout << "PLEASE INTRODUCE A RANDOM BINARY NUMBER" << endl; 
     cin >> num; 
 
     while((num/10)!=0){
@@ -489,7 +507,7 @@ Another random temperatures:
 
     //output of the program
 
-    cout << "THE NUMBER BINARY IS: " << dec << endl;
+    cout << "THE DECIMAL NUMBER CONVERTED IN BINARY IS: " << dec << endl;
 
 ```
 

@@ -22,7 +22,7 @@ int main (){
 
 
     //input of the program asking the user for a binary number
-    cout << "PLEASE INTRODUCE A RANDOM NUMBER" << endl; 
+    cout << "PLEASE INTRODUCE A RANDOM BINARY NUMBER" << endl; 
     cin >> num; 
 
     while((num/10)!=0){
@@ -41,7 +41,7 @@ int main (){
 
     //output of the program
 
-    cout << "THE NUMBER BINARY IS: " << dec << endl;
+    cout << "THE DECIMAL NUMBER CONVERTED IN BINARY IS: " << dec << endl;
 
 
     

@@ -20,7 +20,7 @@ int main (){
 
 
     //input of the program asking the user for a number
-    cout << "PLEASE INTRODUCE A RANDOM NUMBER" << endl; 
+    cout << "PLEASE INTRODUCE A RANDOM DECIMAL NUMBER" << endl; 
     cin >> num; 
 
 
@@ -63,6 +63,6 @@ int main (){
 
 
     //output of the program 
-    cout << "THE NUMBER IS: "<< resultado <<endl;
+    cout << "THE NUMBER DECIMAL CONVERTED IN DECIMAL IS: "<< resultado <<endl;
 
 }
