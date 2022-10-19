@@ -474,6 +474,16 @@ An Example of an error if the user dont choose the correct option:
     cout << "THE NUMBER DECIMAL CONVERTED IN DECIMAL IS: "<< resultado <<endl;
 
 ```
+
+Two examples for this code:
+
+![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/07binario1.png)
+
+![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/07binario2.png)
+
+
+
+
 ***
 ### 07_Decimal
 
@@ -510,6 +520,13 @@ An Example of an error if the user dont choose the correct option:
     cout << "THE DECIMAL NUMBER CONVERTED IN BINARY IS: " << dec << endl;
 
 ```
+
+Two Examples for this code:
+
+![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/07decimal1.png)
+
+![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/07decimal2.png)
+
 
 ***
 
@@ -671,6 +688,10 @@ int main (){
     return 0;
 }
 ```
+
+An Example with the main roots:
+
+![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/09biseccion1.png)
 
 
 
