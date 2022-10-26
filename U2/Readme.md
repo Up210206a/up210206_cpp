@@ -689,7 +689,7 @@ int main (){
 }
 ```
 
-An Example with the main roots:
+***An Example with the main roots:***
 
 ![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/09biseccion1.png)
 
