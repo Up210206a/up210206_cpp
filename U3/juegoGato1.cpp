@@ -1,20 +1,16 @@
-# **<center>  UNIT 2** #
+/*
+Author: Jorge Santacruz
+Date: 7/NOV/22
+description: The game of the cat 
+*/
+
+//Librarys of the program
+#include <iostream>
+
+using namespace std;
 
 
-
-### *<center>  up210206* 
-***
-
-### **In this unit we learned how to use functions on our code, this mean that we can make a large code, more easy to understand, by section it in little programs call "functions", these functions help us to have a better understanding of the program and to improve his functionality.**
-
----
-
-### **In this case we simulate the game of the cat, a famous game that its about to fill a row, a column or a veritcal line trrough a board of 3x3, this mean that it has 9 different boxes to make our game.**
-
-***
-
-```c++
-/GLOBAL VARIABLES OF THE PROGRAM
+//GLOBAL VARIABLES OF THE PROGRAM
 char gato[3][3];
 int turnoJugador = 0;
 char areaJuego[3][3] = {{'1', '2', '3'}, {'4', '5', '6'}, {'7', '8', '9'}};
@@ -261,7 +257,3 @@ void contraCpu(int){
     
     turnoJugador++;
 }
-
-```
-
-
