@@ -264,4 +264,4 @@ void contraCpu(int){
 
 ```
 
-
+*First lets introudce what kind of game we want in this case with another user*
