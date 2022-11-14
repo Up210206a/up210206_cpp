@@ -263,7 +263,20 @@ void contraCpu(int){
 }
 
 ```
+***
 
 *First lets introudce what kind of game we want in this case with another user*
 
-![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/renta1.png)
+![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U3/IMAGES/SELECTPLAY.png)
+
+*Now lets simulate a game and say that P1 wants the box 1 and then the box 2*
+
+![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U3/IMAGES/P13.png)
+
+*Finally lets say that the P1 wins with the boxes 1,2 and 3:*
+
+![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U3/IMAGES/P1WINS.png)
+
+
+
+
