@@ -265,3 +265,5 @@ void contraCpu(int){
 ```
 
 *First lets introudce what kind of game we want in this case with another user*
+
+![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U2/images/renta1.png)
