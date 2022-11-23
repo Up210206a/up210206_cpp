@@ -3,10 +3,6 @@
 # **<center> <span style="color: red;">TIC-TAC-TOE</span>**
 ### **<center> <span style="color: green;"> UP 210206</span>**
 
-<font color="green"> Some green text </font>
-
-
-
 ***
 
 <details>
@@ -31,6 +27,16 @@
 4. The first player to fill a column, a row or a vertical line of 3 boxes wins
 5. it's common to use an "o" or a "x" for a record.
   
+
+</details>
+
+***
+
+<details>
+<summary>  INSTRUCTIONS TO START THE CODE </summary>
+<br>
+
+1. 
 
 </details>
 
