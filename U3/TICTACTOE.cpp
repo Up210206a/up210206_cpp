@@ -14,61 +14,56 @@ description:
 
 */
 
+//LIBRARIES OF THE CODE
 #include <iostream>
-#include <stdalign.h>
 #include <time.h>
-#include <unistd.h>
-
-
 
 
 using namespace std;
 
-void createBoard (int);
+//FUNCTIONS OF THE PROGRAM
+void createBoard ();
+void areaCPU();
 int selectPlay ();
 bool checkPlay (int,string);
 void insertPlay(int,string,string );
 bool checkWinner(string);
 int selectPlayCPU ();
-void insertPlayCpu(int,string,string);
 int cpuPlay ();
 void gotoxy(int x,int y);
 int getBestPlay(string );
 int getPlay();
 
+//GLOBAL VARIABLES OF THE PROGRAM
 char game[3][3];
 char gameArea[3][3]={{'1','2','3'},{'4','5','6'},{'7','8','9'}};
-char gameAreaCPU[3][3]={{'1','2','3'},{'4','5','6'},{'7','8','9'}};
-int turnPlayer= 0;
+char gameAreaCPU[3][3];
+int turnPlayer= 1;
 const string BOARD = "Real";
 const string CPUBOARD = "image";
 const string CPU = "CPU";
 const string PLAYER = "PLAYER";
-const string PC = "Robot";
 
 
+//MAIN FUNCTION
 int main(){
     int op=0,board,play=0;
     bool box=true,winner=false;
     
     gotoxy(62,4);
-    cout<<"----------GAME OF THE CAT----------"<<endl<<endl;
+    cout<<"----------TIC TAC TOE----------"<<endl<<endl;
     gotoxy(70,6);
     cout<<"SELECT YOUR OPONENT"<<endl<<endl;
     gotoxy(70,8);
     cout<<"1.......PLAYER 2"<<endl;
     gotoxy(70,9);
-    cout<<"2.......CPU NORMAL"<<endl;
+    cout<<"2.......CPU"<<endl;
     gotoxy(70,10);
     cin >>op;
-    
-    
-    
-    
- 
-    createBoard(board);
-  
 
+     createBoard();
+  
+    //FIRST OPTION OF THE PROGRAM THAT ENABLE YOU TO PLAY WITH ANOTHER USER
     if(op==1){
 
         do{
@@ -80,6 +75,7 @@ int main(){
                 {
                     cout << "INVALID GAME! TRY AGAIN"<<endl;
                     break;
+                    
                 } while (box == true);
             
             }
@@ -87,8 +83,10 @@ int main(){
 
                 system("clear");
                 insertPlay(play,BOARD,PLAYER);
-                createBoard(board);
-                turnPlayer++;
+               
+                createBoard();
+                 
+                
             }
             winner=checkWinner(BOARD);
 
@@ -97,10 +95,10 @@ int main(){
                
             if (turnPlayer<10){
                 if (turnPlayer % 2 == 0){
-                    cout << "PLAYER 2 WINS"<<endl;
+                    cout << "PLAYER 1 WINS"<<endl;
                 }
                 else{
-                    cout << "PLAYER 1 WINS"<<endl;
+                    cout << "PLAYER 2 WINS"<<endl;
                 }
             } 
             else{
@@ -109,14 +107,19 @@ int main(){
 
 
     }
+    //SECOND MAIN OPTION OF THE PROGRAM THAT LET YOU PLAY WITH THE CPU
     else if (op == 2){
-        do
-        {
+        do{
+
+            system("clear");
+            
             if (turnPlayer % 2 == !0)
             {
                 do
                 {
-                    createBoard(board);
+                    
+                    createBoard();
+                 
                     play = selectPlay();
 
                     box = checkPlay(play, BOARD);
@@ -124,21 +127,33 @@ int main(){
                     {
                         system("clear");
                         cout << "Trye again \n";
+                        break;
                     }
                 } while (box == true);
-                insertPlay(play,BOARD, PLAYER);
+                insertPlay(play, BOARD, PLAYER);
                 winner = checkWinner(BOARD);
             }
-            else
-            {
-                createBoard(board);
+            else if(turnPlayer%2==0){
+                createBoard();
                 play = getPlay();
                 insertPlay(play,BOARD, CPU);
                 winner = checkWinner(BOARD);
             }
         } while (turnPlayer<=9 && winner==false);
         system("clear");
-        createBoard(board);
+        createBoard();
+
+        if (turnPlayer<10){
+                if (turnPlayer % 2 == 0){
+                    cout << "PLAYER 1 WINS"<<endl;
+                }
+                else{
+                    cout << "PLAYER 2 WINS"<<endl;
+                }
+            } 
+            else{
+                cout << "WE HAVE A TIE"<<endl;
+            }
     }
            
 
@@ -146,7 +161,8 @@ int main(){
 
 }
 
-void createBoard (int){
+//FUNCTION THAT CREATES THE BOARD ON THE DISPLAY OF THE TERMINAL
+void createBoard (){
 
       int x = 0, y = 0;
     for (int row = 0; row < 5; row++)
@@ -183,20 +199,24 @@ void createBoard (int){
 
 }
 
+//FUNCTION THAT LET YOU SELECT A BOX OF THE BOARD
 int selectPlay(){
     int turn=0;
     int gamer;
 
+    gotoxy(62,4);
+    cout<<"----------TIC TAC TOE----------"<<endl<<endl;
+
     
 
      do{
-        if(turnPlayer%2==0){
+        if(turnPlayer%2!=0){
             gamer=1;
         }
         else{
             gamer=2;
         }
-
+        gotoxy(62,6);
         cout << "PLAYER " << gamer <<" Select your play: 1-9 : "<<endl;
         cin >> turn;
     } while (turn < 0 || turn > 9);
@@ -205,6 +225,7 @@ int selectPlay(){
 
 }
 
+//FUNCTION THAT COMPARES IF A MOVE ITS CORRECT OR NOT
 bool checkPlay(int play,string BOARD){
      int row = play / 10, col = play - 1;
     if (gameArea[row][col] == 'X' || gameArea[row][col] == 'O')
@@ -217,20 +238,58 @@ bool checkPlay(int play,string BOARD){
     }
 }
 
-void insertPlay(int play,string,string){
+//FUNCTION THAT INSERT A RECORD ON THE BOARD DEPENDING ON THE TURN
+void insertPlay(int play,string board,string gamer){
+        char Record;
     if (turnPlayer % 2 == 0)
     {
-        int row = play / 10, col = play - 1;
-        gameArea[row][col] = 'O';
+        Record = 'X';
     }
     else
     {
-        int row = play / 10, col = play - 1;
-        gameArea[row][col] = 'X';
+        Record = 'O';
+    }
+    int fila = 0, columna = 0;
+    for (int numPlay = 1; numPlay < 10; numPlay++)
+    {
+        if (play == numPlay)
+        {
+            if (board == BOARD)
+            {
+                gameArea[fila][columna] = Record;
+                break;
+            }
+            else if (board == CPUBOARD)
+            {
+                if (gamer == PLAYER)
+                {
+                    Record = 'O';
+                }
+                else if (gamer == CPU)
+                {
+                    Record = 'X';
+                }
+                gameAreaCPU[fila][columna] = Record;
+                break;
+            }
+        }
+        else
+        {
+            columna++;
+            if (columna == 3)
+            {
+                columna = 0;
+                fila++;
+            }
+        }
+    }
+    if (board == BOARD){
+        turnPlayer++;
     }
 
 }
 
+//THIS FUNCTION CONSTANTLY ANALYZE THE BOARD IF IT EXISTS A WINNER
 bool checkWinner(string){
     int punto = 0;
     bool checkWinner = false;
@@ -260,18 +319,7 @@ bool checkWinner(string){
     return checkWinner;
 }
 
-int selectPlayCPU(){
-    int turn=0;
-
-    do{
-
-        cout << "PLAYER 1 "  <<" Select your play: 1-9 : "<<endl;
-        cin >> turn;
-    } while (turn < 0 || turn > 9);
-
-    return turn;
-
-}
+//THIS FUNCTION ENABLE THE CPU TO PUT A RECORD ON THE BOARD
 int getPlay()
 {
     bool box = true;
@@ -295,14 +343,7 @@ int getPlay()
     return play;
 }
 
-void insertPlayCpu(int play){
-    
-        int row = play / 10, col = play - 1;
-        gameArea[row][col] = 'O';
-}
-
-
-
+//FUNCTION THAT CREATES A VIRTUAL BOARD FOR THE CPU
 void areaCPU()
 {
     for (int row = 0; row < 3; row++)
@@ -314,13 +355,14 @@ void areaCPU()
     }
 }
 
-int BestPlay(string jugador){
+//FUCNTION THAT COMPARES ALL THE BEST MOVES IN THE GAME
+int getBestPlay(string gamer){
 
     bool busyBox = false;
     bool checkWin = false;
     int play = 0;
     areaCPU();
-    if (jugador == CPU)
+    if (gamer == CPU)
     {
         do
         {
@@ -333,7 +375,7 @@ int BestPlay(string jugador){
             areaCPU();
         } while (play <= 9 && checkWin == false);
     } 
-    else if (jugador == PLAYER)
+    else if (gamer == PLAYER)
     {
         do
         {
