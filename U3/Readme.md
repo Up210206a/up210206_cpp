@@ -36,7 +36,11 @@
 <summary>  INSTRUCTIONS TO START THE CODE </summary>
 <br>
 
-1. 
+1. downald visual studio code on: https://code.visualstudio.com/download
+2. install this software on your os of preference
+3. copy/paste this next code con your new compiler
+4. make click on run and debug
+5. play the game 
 
 </details>
 
@@ -486,6 +490,20 @@ void gotoxy (int x,int y){
 
 ![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U3/IMAGES/P1WINS.png)
 
+  
+
+</details>
+
+***
+
+<details>
+<summary>  CONCLUSIONS </summary>
+<br>
+
+### *This game was the result of the first encounter with the fucntions, these useful tools called "functions" let us make a more structured code that can be*
+### *divided in sub programs that make much better the workflow of the main structure of the code, in the past we use to make useful only the main function, putting all*
+### *the code inside this main function, but now we're able to make a better code that can be easely understood all thanks to the structures. By the other hand we have* 
+### *such a little limitations for this subprograms, because we use to many times the same variables and this can be a little confusing for a user that want to understand some new code.*
   
 
 </details>
