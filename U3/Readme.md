@@ -357,6 +357,16 @@ void gotoxy (int x,int y){
 
 </details>
 
+***
+<details>
+<summary>  FLOWCHART </summary>
+<br>
+
+![ERROR]()
+  
+
+</details>
+
 
 
 ***

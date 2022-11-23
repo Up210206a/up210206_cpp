@@ -30,11 +30,13 @@ void insertPlay(int play);
 bool checkWinner(bool);
 int selectPlayCPU ();
 void insertPlayCpu(int play);
-void cpuPlay ();
+int cpuPlay ();
 void gotoxy(int x,int y);
+int bestPlay(char entradaJugador);
 
 char game[3][3];
 char gameArea[3][3]={{'1','2','3'},{'4','5','6'},{'7','8','9'}};
+char gameAreaPC[3][3]={{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 int turnPlayer= 0;
 
 
@@ -49,11 +51,16 @@ int main(){
     gotoxy(70,8);
     cout<<"1.......PLAYER 2"<<endl;
     gotoxy(70,9);
-    cout<<"2.......CPU"<<endl;
+    cout<<"2.......CPU NORMAL"<<endl;
     gotoxy(70,10);
     cin >>op;
-
+    
+    
+    
+    
+ 
     createBoard(board);
+  
 
     if(op==1){
 
@@ -98,41 +105,10 @@ int main(){
     else if(op==2){
 
         if(turnPlayer%2!=0){
-
-            do{
-                 play=selectPlay();
-                box=checkPlay(play);
-                if(box==true){
-            
-                do{
-                    cout << "INVALID GAME! TRY AGAIN"<<endl;
-                    break;
-                } while (box == true);
-            
-            }
-            else if (box == false){
-
-                system("clear");
-                insertPlay(play);
-                createBoard(board);
-                turnPlayer++;
-            }
-            winner=checkWinner(winner);
-    
-
-            }while(turnPlayer<=9 && winner==false);
-
-            if (turnPlayer<10){
-                    if (turnPlayer % 2 == 0){
-                        cout << "CPU WINS"<<endl;
-                    }
-                    else{
-                        cout << "PLAYER 1 WINS"<<endl;
-                    }
-                } 
-                else{
-                    cout << "WE HAVE A TIE"<<endl;
-                }
+            play=selectPlay();
+        }
+        else{
+            play=cpuPlay();
         }
    
     }
@@ -275,27 +251,80 @@ void insertPlayCpu(int play){
         gameArea[row][col] = 'O';
 }
 
-void cpuPlay(){
 
-    bool box=true;
-    
-        for(int row=0;row<3;row++){
-            for(int col=0;col<3;col++){
-                if(gameArea[row][col]){
 
-                }
-                
-            }
+int cpuPlay (){
+
+    int playPc;
+    bool checkPlay = false;
+    playPc = bestPlay(PC);
+    if (playPc != -1)
+    {
+        return playPc;
+    }
+
+    playPc= bestPlay(JUGADOR);
+    if (playPc != -1)
+    {
+        return playPc;
+    }
+    while (checkPlay== false)
+    {
+        checkPlay = checkPlay(playPc);
+        playPc = 1 + rand() % 9;
+    }
+    return playPc;
+}
+
+void areaPC()
+{
+    for (int row = 0; row < 3; row++)
+    {
+        for (int col = 0; col < 3; col++)
+        {
+            gameAreaPC[row][col] = gameArea[row][col];
         }
+    }
+}
 
-        
-
-   
-
-
-
-    
-    turnPlayer++;
+int bestPlay(char entradaJugador){
+    bool jugadaUsada= false;
+    bool ganador = false;
+    int jugadaPC = 0;
+    areaPC();
+    if (entradaJugador == 'X')
+    {
+        do
+        {
+            jugadaPC++;
+            jugadaUsada = comprobarCasillaOcupadaPC(jugadaPC);
+            if (jugadaUsada == false)
+            {
+                colocarJugadaPCenX(jugadaPC);
+                ganador = revisarGanadorPC(jugadaPC);
+            }
+            areaPC();
+        } while (jugadaPC <= 9 && ganador == false);
+    }
+    else
+    {
+        do
+        {
+            jugadaPC++;
+            jugadaUsada = comprobarCasillaOcupadaPC(jugadaPC);
+            if (jugadaUsada == false)
+            {
+                colocarJugadaPCenO(jugadaPC);
+                ganador = revisarGanadorPC(jugadaPC);
+            }
+            areaPC();
+        } while (jugadaPC <= 9 && ganador == false);
+    }
+    if (jugadaPC >= 10)
+    {
+        jugadaPC = -1;
+    }
+    return jugadaPC;
 }
 
 void gotoxy (int x,int y){
