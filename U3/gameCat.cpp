@@ -1,39 +1,3 @@
-# **<center> <span style="color: blue;">UNIT 3</span>**
-
-# **<center> <span style="color: red;">GAME OF THE CAT</span>**
-### *<center>  up210206* 
-***
-
-<details>
-<summary>  SUMMARY  </summary>
-<br>
-
-#### **In this unit we learned how to use functions on our code, this mean that we can make a large code, more easy to understand, by section it in little programs call "functions", these functions help us to have a better understanding of the program and to improve his functionality. In this case we simulate the game of the cat, a famous game that its about to fill a row, a column or a veritcal line trrough a board of 3x3, this mean that it has 9 different boxes to make our game.**
-
-</details>
-
-***
-
-<details>
-<summary>  RULES OF THE GAME  </summary>
-<br>
-
-1. The game board it's divided on a grid of nine boxes
-2. The game has two players, no matter who starts first
-3. Every player has the chance to fill one box at the time 
-4. The first player to fill a column, a row or a vertical line of 3 boxes wins
-5. it's common to use an "o" or a "x" for a record.
-  
-
-</details>
-
-***
-
-<details>
-<summary>  CODE </summary>
-<br>
-
-```c++
 /*
 Author: Jorge Santacruz
 Date: 7/nov/22
@@ -337,38 +301,3 @@ void cpuPlay(){
 void gotoxy (int x,int y){
     cout<<"\033["<<y<<";"<<x<<"f";
 }
-
-
-```
-  
-
-</details>
-
-
-
-***
-
-
-
-<details>
-<summary>  PROCESS </summary>
-<br>
-
-*First lets introudce what kind of game we want in this case with another user*
-
-![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U3/IMAGES/SELECTPLAY.png)
-
-*Now lets simulate a game and say that P1 wants the box 1 and then the box 2*
-
-![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U3/IMAGES/P13.png)
-
-*Finally lets say that the P1 wins with the boxes 1,2 and 3:*
-
-![ERROR](https://github.com/Up210206a/up210206_cpp/blob/main/U3/IMAGES/P1WINS.png)
-
-  
-
-</details>
-
-
-
