@@ -1,7 +1,7 @@
 # **<center> <span style="color: blue;">UNIT 3</span>**
 
-# **<center> <span style="color: red;">GAME OF THE CAT</span>**
-### *<center>  up210206* 
+# **<center> <span style="color: red;">TIC-TAC-TOE</span>**
+### **<center> <span style="color: green;"> UP 210206</span>**
 ***
 
 <details>
